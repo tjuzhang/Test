@@ -34,3 +34,13 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      
+      # Setup python
+      - name: Setup Python
+        uses: actions/setup-python@1
+        with:
+          python-version: 3.7
+      
+      # Run py file
+      - name: Run py
+        run: python run.py
